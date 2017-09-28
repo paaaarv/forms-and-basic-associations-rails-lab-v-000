@@ -11,7 +11,9 @@
   <br />
 
   <%= f.label :notes%> <br>
-  <%= f.collection_check_boxes :notes, Note.all, :id, :content%> <br>
+  <%= f.text_field "song[notes][]"%> 
+  <%= f.text_field "song[notes][]"%> 
+  <%= f.text_field "song[notes][]"%>
 
   <%= f.submit %>
 <% end %>
