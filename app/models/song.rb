@@ -35,10 +35,10 @@ class Song < ActiveRecord::Base
     end
   end
 
-  def note_contents 
-    if !self.notes.empty? 
-      self.notes 
-    end 
+  def note_contents
+    if !self.notes.empty?
+      self.notes
+    end
   end
 
 
