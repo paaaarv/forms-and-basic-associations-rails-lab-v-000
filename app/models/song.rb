@@ -12,8 +12,8 @@ class Song < ActiveRecord::Base
     self.artist = @artist
   end
 
-  def artist_name 
-    self.artist.name 
+  def artist_name
+    self.artist.name
   end 
 
   def genre_name=(name)
