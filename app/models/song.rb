@@ -30,7 +30,7 @@ class Song < ActiveRecord::Base
 
   def note_contents=(name)
     binding.pry
-  end 
+  end
 
 
 end
