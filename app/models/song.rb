@@ -11,6 +11,7 @@ class Song < ActiveRecord::Base
   end
 
   def genre_name=(ids)
+    binding.pry
     if !ids.empty?
       ids.each do |id|
         genre = Genre.find(id)
