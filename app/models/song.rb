@@ -30,6 +30,7 @@ class Song < ActiveRecord::Base
 
   def note_contents=(notes)
     notes.each do |note|
+      binding.pry
       @note = Note.find_by(name: name)
       self.notes << @note
     end
