@@ -42,6 +42,7 @@ class Song < ActiveRecord::Base
         array << note.content
       end
     end
+    array
   end
 
 
