@@ -29,12 +29,10 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(notes)
-    notes.all.each do |note| 
+    notes.all.each do |note|
       @note = Note.find_by(name: name)
-      self.notes << @note 
-    end 
-  end 
-    binding.pry
+      self.notes << @note
+    end
   end
 
 
