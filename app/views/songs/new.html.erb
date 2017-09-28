@@ -6,7 +6,7 @@
   <%= f.label :artist_name%>
   <%= f.text_field :artist_name%>
   <%= f.label :genre%>
-  <%=f.collection_check_boxes :genre_id, Genre.all, :id, :name %>
+  <%=f.collection_check_boxes :song_genre_id, Genre.all, :id, :name %>
   <br />
 
 
