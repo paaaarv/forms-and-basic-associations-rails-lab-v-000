@@ -1,4 +1,4 @@
-require '[ry]'
+require 'pry'
 
 class Song < ActiveRecord::Base
   belongs_to :artist
