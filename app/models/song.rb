@@ -5,7 +5,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   has_many :notes
 
-  attr_reader :artist_name, :genre_name
+  attr_accessor :artist_name, :genre_name
 
   def artist_name=(name)
     @artist = Artist.find_or_create_by(name: name)
