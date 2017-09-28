@@ -12,13 +12,8 @@ class Song < ActiveRecord::Base
     self.artist = @artist
   end
 
-  def genre_name=(ids)
-    binding.pry
-    if !ids.empty?
-      ids.each do |id|
-        genre = Genre.find(id)
-        self.genres << genre
-      end
-    end
+  def genre_name=(name)
+    genre = Genre.find_or_create_by(name: name)
+    self.genre = genre 
   end
 end
