@@ -11,7 +11,7 @@
   <br />
 
   <%= f.label :notes%> <br>
-  <%= f.collection_check_boxes :notes[], Note.all, :id, :content%> <br>
+  <%= f.collection_check_boxes :notes, Note.all, :id, :content%> <br>
 
   <%= f.submit %>
 <% end %>
