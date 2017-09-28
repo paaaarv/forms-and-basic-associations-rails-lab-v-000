@@ -27,4 +27,9 @@ class Song < ActiveRecord::Base
       self.genre.name
     end
   end
+
+  def note_contents=(name)
+  end 
+
+  
 end
