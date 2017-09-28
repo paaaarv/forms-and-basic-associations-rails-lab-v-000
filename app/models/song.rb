@@ -38,12 +38,9 @@ class Song < ActiveRecord::Base
   def note_contents
     array = []
     if !self.notes.empty?
-      self.notes.each do |note| 
-        array << note.name 
-      end 
-    end 
-  end
-        
+      self.notes.each do |note|
+        array << note.name
+      end
     end
   end
 
